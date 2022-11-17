@@ -11,7 +11,7 @@
     "128": "src/icons/icon.png"
   },
   "version": "0.0.1",
-  "manifest_version": 1,
+  "manifest_version": 3,
   "action": {
     "default_popup": "src/html/menu.html",
     "default_icon": "src/icons/icon.png"
