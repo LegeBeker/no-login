@@ -1,6 +1,6 @@
 {
   "background": {
-    "service_worker": "src/js/background.js"
+    "service_worker": "background.js"
   },
   "name": "No Login",
   "description": "Extension to use popular social media without logging in",
