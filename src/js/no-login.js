@@ -1,5 +1,15 @@
+const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+
 if (window.location.href.indexOf('twitter.com') > -1) {
     console.log('no-login script is running for twitter');
+    // addCSS('.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz, .css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj { display: none!important; }');
+
+    //wait 1 second
+    setTimeout(() => {
+        document.querySelector('.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz').remove();
+        document.querySelector('.css-1dbjc4n.r-aqfbo4.r-1p0dtai.r-1d2f490.r-12vffkv.r-1xcajam.r-zchlnj').remove();
+    }, 100);
+
 }
 
 
