@@ -1,7 +1,4 @@
 {
-  "background": {
-    "service_worker": "background.js"
-  },
   "name": "No Login",
   "description": "Extension to use popular social media without logging in",
   "homepage_url": "https://github.com/legebeker/no-login/",
@@ -15,8 +12,14 @@
     "default_popup": "src/html/menu.html",
     "default_icon": "src/icons/icon.png"
   },
-  "web_accessible_resources": [{
-  "resources": ["script.js"],
-  "matches": ["<all_urls>"]
-}]
+  "content_scripts": [
+    {
+		"matches": ["https://*/*", "http://*/*"],
+      "js": [
+        "src/js/no-login.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
 }
