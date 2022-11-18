@@ -10,8 +10,13 @@
   },
   "version": "0.0.1",
   "manifest_version": 3,
+  "permissions": ["contextMenus","storage","activeTab","tabs","scripting","webRequest"],
   "action": {
     "default_popup": "src/html/menu.html",
     "default_icon": "src/icons/icon.png"
-  }
+  },
+  "web_accessible_resources": [{
+  "resources": ["script.js"],
+  "matches": ["<all_urls>"]
+}]
 }
